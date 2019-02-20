@@ -1,4 +1,4 @@
-# require libraries/modules here
+ # require "libraries/modules" here
 require 'nokogiri'
 def create_project_hash
   projects = {}
@@ -17,6 +17,7 @@ def create_project_hash
       :location => location,
       :percent_funded => percent_funded
     }
-    projects
+
   end
+  projects
 end
