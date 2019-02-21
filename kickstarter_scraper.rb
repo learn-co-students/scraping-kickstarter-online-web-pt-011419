@@ -12,14 +12,14 @@ def create_project_hash
     description = element.css("p.bbcard_blurb ").text
     location = element.css("span.location-name").text
     percent_funded = element.css("li.first.funded").text.gsub("%", "").to_i
-    #binding.pry
+    binding.pry
     projects[title.to_sym] = {
       :image_link => image,
       :description => description,
       :location => location,
       :percent_funded => percent_funded
     }
-    binding.pry
+    # binding.pry
 
   end
   projects
