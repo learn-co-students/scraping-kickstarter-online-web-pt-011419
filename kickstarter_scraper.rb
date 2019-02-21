@@ -19,6 +19,8 @@ def create_project_hash
       :location => location,
       :percent_funded => percent_funded
     }
+    binding.pry
+
   end
   projects
 end
